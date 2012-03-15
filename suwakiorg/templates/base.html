@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+{% load compressed %}
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>{% block "title" %}{% endblock %}</title>
+    {% compressed_css 'all' %}
+</head>
+
+<body>
+    <div id="body">
+    {% block "body" %}{% endblock %}
+    </div>
+
+
+    <footer>
+        
+    </footer>
+</body>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+{% compressed_js 'all' %}
+</html>

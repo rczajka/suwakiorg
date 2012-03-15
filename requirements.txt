@@ -1,0 +1,6 @@
+# Django basics
+django>=1.4a,<1.5a
+South>=0.7
+
+django-pipeline>=1.2,<1.3a
+pyScss
