@@ -8,15 +8,15 @@
 <h1>{% trans "Moving the copyright sliders." %}</h1>
 
     <section id="sliders">
-    {% for dim in dimensions %}
+    {% for s in sliders %}
 	   <div class="dimension">
-	       <div class="name">{{ dim.name }}</div>
+	       <div class="name">{{ s.name }}</div>
 	       <div class="slider-area">
-	       <div class="slider" data-dimslug="{{ dim.slug}}" data-initial='150'></div>
+	       <div class="slider" data-slider="{{ s.pk }}"></div>
 	       {% spaceless %}
 	       <ul class="stops">
-    	       {% for stop in dim.stops %}
-    		      <li style="{% stop_pos forloop.counter dim.stops %}"><span>{{ stop }}</span></li>
+    	       {% for v in s.value_set.all %}
+    		      <li data-pk="{{ v.pk }}" style="{% stop_pos forloop.counter s.value_set.all %}"><span>{{ v.name }}</span></li>
 	       	   {% endfor %}
 		   </ul>
 		   {% endspaceless %}
@@ -26,10 +26,10 @@
 	{% endfor %}
 
     <section id="headers-area">
-    <p id="noheaders">{% trans "No matching news found." %}</p>
+    <p id="noheaders">{% trans "No relevant news found." %}</p>
     <ul id="headers">
     </ul>
     </section>
-    <p><a id='add-link' href="">{% trans "Add some news!" %}</a></p>
+    <!--p><a id='add-link' href="">{% trans "Add some news!" %}</a></p-->
         
 {% endblock %}

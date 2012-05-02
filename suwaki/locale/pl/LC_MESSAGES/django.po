@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-05-02 04:05+0200\n"
+"PO-Revision-Date: 2012-05-02 04:05+0100\n"
+"Last-Translator: Radek Czajka <radoslaw.czajka@nowoczesnapolska.org.pl>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: models.py:6
+#: models.py:20
+msgid "name"
+msgstr "nazwa"
+
+#: models.py:7
+#: models.py:21
+msgid "ordering"
+msgstr "kolejność"
+
+#: models.py:10
+#: models.py:19
+msgid "slider"
+msgstr "suwak"
+
+#: models.py:11
+msgid "sliders"
+msgstr "suwaki"
+
+#: models.py:25
+#: models.py:35
+msgid "value"
+msgstr "wartość"
+
+#: models.py:26
+msgid "values"
+msgstr "wartości"
+
+#: models.py:36
+msgid "title"
+msgstr "tytuł"
+
+#: models.py:37
+msgid "text"
+msgstr "tekst"
+
+#: models.py:38
+msgid "active"
+msgstr "aktywny"
+
+#: models.py:43
+#: models.py:44
+msgid "news"
+msgstr "news"
+
+#: templates/suwaki/home.html:8
+msgid "Moving the copyright sliders."
+msgstr "Ruszamy suwaki prawa autorskiego."
+
+#: templates/suwaki/home.html:29
+msgid "No relevant news found."
+msgstr "Nie znaleziono informacji na ten temat."
+
+#: templates/suwaki/home.html:33
+msgid "Add some news!"
+msgstr "Dodaj informację!"
+

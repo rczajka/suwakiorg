@@ -23,14 +23,13 @@ PIPELINE_CSS_COMPRESSOR = None
 PIPELINE_JS_COMPRESSOR = None
 
 PIPELINE_COMPILERS = (
-  'pipeline_scss.SCSSCompiler',
+    'pipeline_scss.SCSSCompiler',
 )
-PIPELINE_STORAGE = 'pipeline.storage.PipelineFinderStorage'
-STATICFILES_STORAGE = 'pipeline.storage.PipelineStorage'
-#STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.CachedStaticFilesStorage'
+#PIPELINE_STORAGE = 'pipeline.storage.PipelineFinderStorage'
+STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
 
-STATICFILES_FINDERS = (
-   'pipeline.finders.PipelineFinder',
-   'django.contrib.staticfiles.finders.FileSystemFinder',
-   'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-)
+#STATICFILES_FINDERS = (
+#   'pipeline.finders.PipelineFinder',
+#   'django.contrib.staticfiles.finders.FileSystemFinder',
+#   'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+#)
